@@ -1,55 +1,33 @@
-# Desafío de Testing en Dos Días
+# Two-Day Testing Challenge
 
-¡Bienvenido al desafío de testing de dos días! Durante este periodo, me embarcaré en una misión para realizar la mayor cantidad de pruebas posible, incluyendo pruebas exhaustivas en las aplicaciones web que he desarrollado. La meta es explorar y evaluar todas las secciones de mi portfolio para asegurar un rendimiento óptimo y una experiencia de usuario sin problemas.
 
-## Objetivos del Desafío:
 
-1. **Cobertura Completa:**
-   - Se realizarán pruebas en todas las secciones del portfolio.
-   - Se verificará la funcionalidad y la apariencia en distintos dispositivos y navegadores.
-
-2. **Testeo de Aplicaciones Web:**
-   - Se llevará a cabo un análisis exhaustivo de las aplicaciones web desarrolladas, identificando posibles mejoras y garantizando la estabilidad del sistema.
-
-3. **Eficiencia en el Desarrollo:**
-   - Por cuestion de tiempo no se implementará el modelo de objeto de página (POM) en esta ocasión para acelerar el proceso, se mantendrá un enfoque rápido y eficiente.
-
-4. **Legibilidad del Código:**
-   - A pesar de no utilizar POM, se garantizará la claridad y legibilidad del código para facilitar futuras colaboraciones y mantenimiento.
-
-5. **Variables de Entorno:**
-   - No se usaron en esta ocacion para el desarrollo de los test.Pero es importante siempre hacerlo.
+Welcome to the two-day testing challenge! During this period, I will embark on a mission to conduct as many tests as possible, including thorough testing on the web applications I have developed. The goal is to explore and evaluate all sections of my portfolio to ensure optimal performance and a seamless user experience.
 
 ### LINK VIDEO
 
 
 [![Alt text](https://img.youtube.com/vi/opDDFzMC8Y8/0.jpg)](https://youtu.be/opDDFzMC8Y8)
+## Challenge Objectives:
 
-## Metodología:
+1. **Complete Coverage:**
 
-- **Día 1: Exploración y Pruebas Iniciales**
-  - Realizar un mapeo exhaustivo de todas las secciones del portfolio.
-  - Iniciar pruebas preliminares para identificar posibles problemas.
+   - Tests will be conducted on all sections of the portfolio.
+   - Functionality and appearance will be verified on different devices and browsers.
 
-- **Día 2: Profundización y Optimización**
-  - Refinar las pruebas en las áreas identificadas como críticas.
-  - Priorizar la optimización y la eficiencia del código.
+2. **Web Application Testing:**
+   - A comprehensive analysis of developed web applications will be carried out, identifying potential improvements and ensuring system stability.
 
-## Aportes Esperados:
+3. **Development Efficiency:**
+   - Due to time constraints, the Page Object Model (POM) will not be implemented on this occasion to expedite the process; a quick and efficient approach will be maintained.
 
-- **Informes de Pruebas:**
-  - Documentar resultados de pruebas, incluyendo capturas de pantalla si es necesario.
-  - Identificar y clasificar problemas según su gravedad.
+4. **Code Readability:**
+   - Despite not using POM, code clarity and readability will be ensured to facilitate future collaborations and maintenance.
 
-- **Sugerencias de Mejora:**
-  - Proponer mejoras para optimizar el rendimiento y la experiencia del usuario.
-  - Ofrecer recomendaciones para la implementación de POM en futuras iteraciones.
+5. **Environment Variables:**
+   - They were not used on this occasion for test development. However, it is always important to do so.
 
-## Código Claro y Comentado:
 
-- Garantizar que el código sea legible y fácil de entender.
-- Incluir comentarios explicativos donde sea necesario.
+## Appreciations:
 
-## Agradecimientos:
-
-¡Gracias por quedarte hasta el fin!🚀
+Thank you for staying until the end! 🚀

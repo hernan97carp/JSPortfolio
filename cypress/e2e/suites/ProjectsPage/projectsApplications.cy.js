@@ -1,3 +1,7 @@
+//The reason why we test projects and applications in a single file(projects Applications) is due to
+// time constraints. 
+//Typically, there would be one file for each System Under Test (SUT).
+
 describe("Project | Conversion | Cryptocurrency ", () => {
   beforeEach("Precondition:Visit the web site", () => {
     cy.visit("https://cripto-react-j47d.netlify.app/");
