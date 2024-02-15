@@ -61,6 +61,18 @@ describe("This is a section about the projects make it", () => {
       "Admin. de Veterinaria"
     );
   });
+  it.only("TC6: Validate projects by clicking on each one of them", () => {
+    cy.get(".thumbnails > :nth-child(1) > img").should("exist").click();
+    cy.showProjects("CriptoCotizador");
+    cy.get(".thumbnails > :nth-child(2) > img").should("exist").click();
+    cy.showProjects("Clima");
+    cy.get(".thumbnails > :nth-child(3) > img").should("exist").click();
+    cy.showProjects("Wallet");
+    cy.get(".thumbnails > :nth-child(4) > img").should("exist").click();
+    cy.showProjects("Cotizador de Seguros");
+    cy.get(".thumbnails > :nth-child(5) > img").should("exist").click();
+    cy.showProjects("Admin. de Veterinaria");
+  });
 
   it("TC6:Validate the elements of the footer", () => {
     //This site was create with:
@@ -97,3 +109,8 @@ describe("This is a section about the projects make it", () => {
       .click();
   });
 });
+
+
+
+
+
