@@ -138,15 +138,6 @@ Cypress.Commands.add("showProjects", (project) => {
     .should("exist")
     .invoke("text")
     .should("contain", project);
-
-
-
-
-
-
-
-
-
 });
 
 Cypress.Commands.add("validationFormInsurance", (model, plan, year) => {
@@ -172,53 +163,57 @@ Cypress.Commands.add("validationFormInsurance", (model, plan, year) => {
     .then((result) => {
       expect(result.toLowerCase()).to.include("el total es");
     });
-
 });
-
-
-
-
-
 
 Cypress.Commands.add("inputFieldsOptions", (model, year, plan) => {
   model && cy.get(":nth-child(1) > .css-ajjmmw").select(model);
   year && cy.get(":nth-child(2) > .css-ajjmmw").select(year);
-  plan && cy.get(`[value="${plan}"]`).click({force: true});
+  plan && cy.get(`[value="${plan}"]`).click({ force: true });
 
   cy.get(".css-1cro71e").click();
 });
 
-Cypress.Commands.add('fieldFormVeterinary',(pet,owner,time,Symptoms)=>{
-  const fechaActual = new Date().toISOString().split('T')[0];
- pet && cy.get('[name="mascota"]').click().type(pet)
-  owner &&cy.get('[name="propietario"]').click().type(owner)
+Cypress.Commands.add("fieldFormVeterinary", (pet, owner, time, Symptoms) => {
+  const fechaActual = new Date().toISOString().split("T")[0];
+  pet && cy.get('[name="mascota"]').click().type(pet);
+  owner && cy.get('[name="propietario"]').click().type(owner);
   cy.get('input[name="fecha"]').type(fechaActual);
- time && cy.get('[type="time"]').type(time)
- Symptoms && cy.get('textarea.u-full-width').type(Symptoms)
-  
-  cy.get('.button-primary').click()
-})
+  time && cy.get('[type="time"]').type(time);
+  Symptoms && cy.get("textarea.u-full-width").type(Symptoms);
 
-
-Cypress.Commands.add('validateAppointmentDetails',(pet,owner,date,Symptoms)=>{
-
-cy.get('.cita > :nth-child(1)').invoke('text').then((result)=>{
-    expect(result).to.include(`Mascota: ${pet}`)
-})
-cy.get('.cita > :nth-child(2)').invoke('text').then((result)=>{
-    expect(result).to.include(`Dueño: ${owner}`)
-})
-cy.get('.cita > :nth-child(4)').invoke('text').then((result)=>{
-  expect(result).to.include(`Hora: ${date}`)
-})
-cy.get('.cita > :nth-child(5)').invoke('text').then((result) => {
-  const expectedText = `Sintomas: ${Symptoms}`;
-  expect(result.trim()).to.equal(expectedText);
+  cy.get(".button-primary").click();
 });
 
-})
+Cypress.Commands.add(
+  "validateAppointmentDetails",
+  (pet, owner, date, Symptoms) => {
+    cy.get(".cita > :nth-child(1)")
+      .invoke("text")
+      .then((result) => {
+        expect(result).to.include(`Mascota: ${pet}`);
+      });
+    cy.get(".cita > :nth-child(2)")
+      .invoke("text")
+      .then((result) => {
+        expect(result).to.include(`Dueño: ${owner}`);
+      });
+    cy.get(".cita > :nth-child(4)")
+      .invoke("text")
+      .then((result) => {
+        expect(result).to.include(`Hora: ${date}`);
+      });
+    cy.get(".cita > :nth-child(5)")
+      .invoke("text")
+      .then((result) => {
+        const expectedText = `Sintomas: ${Symptoms}`;
+        expect(result.trim()).to.equal(expectedText);
+      });
+  }
+);
 
-Cypress.Commands.add('validateFormSubmission', () => {
-  cy.get('.alerta-error').invoke('text').should('include', 'Todos los campos son obligatorios');
+Cypress.Commands.add("validateFormSubmission", () => {
+  cy.get(".alerta-error")
+    .invoke("text")
+    .should("include", "Todos los campos son obligatorios");
   cy.get(".cita").should("not.exist");
 });

@@ -8,12 +8,11 @@ module.exports = defineConfig({
     
     
     },
+    "screenshotsFolder": "cypress/screenshots",
+    "chromeWebSecurity": false,
     "video": true,
-
     "videosFolder": "cypress/videos",
     "videoCompression": 32,
-    "encoding": "vp9"
-  
-
+    "encoding": "vp9",
   },
 });

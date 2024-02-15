@@ -79,14 +79,9 @@ describe("Navbar Test", () => {
     cy.get('img[src="/images/tailwind.png"]').should("exist").click();
     cy.get('img[src="/images/logo-bootstrap.png"]').should("exist").click();
     cy.get('img[src="/images/vscode.png"]').should("exist").click();
-
-
-    
   })
 
-
 it('TC5:Validate the elements of the footer',()=>{
-
 //This site was create with:
   cy.get('p.footer_p.text-white.font-Chakra.font-normal.text-xs.m-0.pr-2').invoke('text').should('contains','Este sitio fue desarrolado con:')
 //images
