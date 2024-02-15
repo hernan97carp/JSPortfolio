@@ -44,7 +44,7 @@ it("TC4:Validate not send a message with the input email is empty",()=>{
 
 })
 
-it.only("TC5:Validate not send a message with the input message is empty",()=>{
+it("TC5:Validate not send a message with the input message is empty",()=>{
     cy.get('.textModCenter > .flex').should('exist')
     cy.get('[type="text"]').should('exist').type('hernan')
     cy.get('[placeholder="Ej: WalterHR@gmail.com"]').should('exist').type('testssdwwsd@hotmail.com')

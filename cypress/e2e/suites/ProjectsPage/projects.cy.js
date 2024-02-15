@@ -61,7 +61,7 @@ describe("This is a section about the projects make it", () => {
       "Admin. de Veterinaria"
     );
   });
-  it.only("TC6: Validate projects by clicking on each one of them", () => {
+  it("TC6: Validate projects by clicking on each one of them", () => {
     cy.get(".thumbnails > :nth-child(1) > img").should("exist").click();
     cy.showProjects("CriptoCotizador");
     cy.get(".thumbnails > :nth-child(2) > img").should("exist").click();
