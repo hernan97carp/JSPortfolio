@@ -20,6 +20,11 @@
 5. **Variables de Entorno:**
    - No se usaron en esta ocacion para el desarrollo de los test.Pero es importante siempre hacerlo.
 
+### LINK VIDEO
+
+
+[![Alt text](https://img.youtube.com/vi/opDDFzMC8Y8/0.jpg)](https://youtu.be/opDDFzMC8Y8)
+
 ## Metodología:
 
 - **Día 1: Exploración y Pruebas Iniciales**
