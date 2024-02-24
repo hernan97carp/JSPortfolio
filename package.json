@@ -1,23 +1,29 @@
 {
-  "name": "jsportfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node server.js",
-   "cypress:open": "cypress open"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hernan97carp/JSPortfolio.git"
-  },
-  "author": "hernan esquivel",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hernan97carp/JSPortfolio/issues"
-  },
-  "homepage": "https://github.com/hernan97carp/JSPortfolio#readme",
-  "devDependencies": {
-    "cypress": "^13.6.4"
-  }
+	"name": "jsportfolio",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node server.js",
+		"cypress:open": "cypress open"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hernan97carp/JSPortfolio.git"
+	},
+	"author": "hernan esquivel",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/hernan97carp/JSPortfolio/issues"
+	},
+	"homepage": "https://github.com/hernan97carp/JSPortfolio#readme",
+	"devDependencies": {
+		"cypress": "^13.6.4",
+		"cypress-file-upload": "^5.0.8",
+		"eslint": "^8.57.0"
+	},
+	"dependencies": {
+		"eslint-config-prettier": "^9.1.0",
+		"express": "^4.18.2"
+	}
 }

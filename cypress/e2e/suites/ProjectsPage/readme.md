@@ -1,1 +1,0 @@
-## The reason why we test projects and applications in a single file(projects Applications) is due to time constraints. Typically, there would be one file for each System Under Test (SUT).
